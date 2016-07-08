@@ -5,9 +5,9 @@
         <div id="posts" class="posts-expand">
             <div class="tag-cloud">
                 <div class="tag-cloud-title">
-                    目前共计&nbsp;{{#get "tags"}}
+                    目前共有&nbsp;{{#get "tags"}}
                     {{pagination.total}}
-                {{/get}}&nbsp;个标签
+                {{/get}}&nbsp;個標籤
                 </div>
                 <div class="tag-cloud-tags">
                     {{#get "tags" limit="all" include="count.posts"}}
@@ -67,5 +67,3 @@
         }
     });
 </script>
-
-
