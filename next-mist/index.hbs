@@ -58,22 +58,3 @@
         {{> sidebar}}
      </div>
  </aside>
- <script type="text/javascript">
-     $(".ds-thread-count").each(function(){
-         var apiUrl = "http://api.duoshuo.com/threads/counts.jsonp?short_name=" + duoshuo_name + "&threads=" + $(this).attr("data-thread-key")  + "&callback=?";
-         var currentObj = $(this);
-         var test = $.getJSON(apiUrl, function(data){
-             //console.log(data.response[0].comments);
-             //console.log(currentObj);
-             var id = currentObj.attr("data-thread-key");
-             //console.log(id);
-             var commentNumber = data.response[id].comments;
-             //console.log(commentNumber);
-             if(commentNumber == "0") {
-                 $(currentObj).html("暫無評論");
-             }else {
-                 $(currentObj).html(commentNumber + "則評論")
-             }
-         });
-     });
- </script>
