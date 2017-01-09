@@ -12,7 +12,7 @@ forked from https://github.com/microud/ghost-theme-next
 - 以 `disqus` 取代 `duoshuo`
 - 用語繁中化
 
-基本環境安裝與設定，可參考原repo。
+基本環境安裝與設定，可參考原 [Repo](https://github.com/microud/ghost-theme-next)。
 
 ## Config Injection
 <pre>
