@@ -9,14 +9,14 @@
                         <div class="post-meta">
                             <span class="post-time">
                                 <span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i></span>
-                                <span class="post-meta-item-text">發表於</span>
+                                <span class="post-meta-item-text">发表于</span>
                                 <time itemprop="dateCreated">{{date format='YYYY-MM-DD'}}</time>
                             </span>
                             <span class="post-category">&nbsp; | &nbsp;
                                 <span class="post-meta-item-icon">
                                     <i class="fa fa-folder-o"></i>
                                 </span>
-                                <span class="post-meta-item-text">標籤</span>
+                                <span class="post-meta-item-text">标签</span>
                                 <span itemprop="about" itemscope="" itemtype="https://schema.org/Thing">
                                     {{#if tags}}
                                         {{tags}}
@@ -28,15 +28,6 @@
                                     <span class="post-comments-count ds-thread-count" data-thread-key="{{id}}" itemprop="commentsCount"></span>
                                 </a>
                             </span>
-                            <!--
-             <span id="/blog/2016/05/09/flink-internals-understanding-execution-resources/" class="leancloud_visitors" data-flag-title="Flink 原理与实现：理解 Flink 中的计算资源">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count">173</span>
-              </span> -->
                         </div>
                     </header>
                     <div class="post-body" itemprop="articleBody">
@@ -72,10 +63,10 @@
     <div class="sidebar-inner">
         <ul class="sidebar-nav motion-element">
             <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-                目錄
+                目录
             </li>
             <li class="sidebar-nav-overview" data-target="site-overview">
-                關於部落格
+                关于此博客
             </li>
         </ul>
         {{> sidebar}}
@@ -101,6 +92,6 @@
             $("#category_nav").html($("#category_nav").html() + '<li class="nav-item nav-level-2"><a class="nav-link" href="#' + $(this).html().replace(/ +/g, '-').replace(/<(\/a|a).*>/g, "") + '"><span class="nav-text">' + $(this).html().replace(/<(\/a|a).*>/g, "") + '</span></a></li>');
         });
     } else {
-        $("#category_nav").html($("#category_nav").html() + '<span class="nav-text">暫無目錄</span>');
+        $("#category_nav").html($("#category_nav").html() + '<span class="nav-text">暂无目录</span>');
     }
 </script>
